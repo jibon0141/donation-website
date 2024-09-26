@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisyUI , tailwind and font awsome cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  
+     <header class="">
+          <!-- navbar section start -->
+          <div class="flex flex-col gap-y-4 px-8 md:flex-row items-center justify-around p-4">
+            <div class="">
+              <a class="px-6 py-1.5 bg-lime-300 rounded-md"><button><span id="home" class="text-sm font-bold">Home</span></button></a>
+            </div>
+            <div class="flex flex-col items-center gap-y-4 md:flex-row text-center md:text-left">
+                <div class="h-8 w-8 mr-4">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <h1 class="font-bold">Donate Bangladesh</h1>               
+            </div>
+            <div class="flex flex-col items-center gap-y-4 md:flex-row md:items-center">
+                <div class="mr-3">
+                    <img src="assets/coin.png" alt="">
+                </div>
+                <p class="text-md font-bold"><span id="total-amount">5500</span><san> BDT</san></p>
+             
+            </div>
+          </div>
+
+    </header>
+
+    <main class="md:mx-16 md:mt-4">
+
+
+       <div class="flex  items-center text-3xl font-bold mb-12 px-8 py-4  border-2 shadow-2xl h-item">
+        <h1 class="mr-2">Important FAQ</h1>
+        <i class="fa-regular fa-circle-question"></i>
+       </div>
+       
+
+        <div class="shadow-2xl px-8 py-4 border-2 items">
+            <h1 class="text-xl font-medium pb-2">Ques 1: What is the Document Object Model(DOM)?</h1>
+            <p class="font-normal text-sm">Ans. DOM  ia a platfor and interface that help us to get access and manupulate
+                 contect,structure and style of a document.</p>
+        </div>
+
+        <div class="shadow-2xl px-8 py-4 border-2 items">
+            <h1 class="text-xl font-medium pb-2">Ques 2: How do you select an element from the DOM?</h1>
+            <p class="font-normal text-sm">Ans.we can select it in various ways. like:<br>
+                document.getElementsByTagName("tag");,
+                document.getElementsByClassName("class");,
+                document.getElementById("id");,
+                document.querySelector(".Class");,
+                document.querySelectorAll(".Class");
+
+            </p>
+        </div>
+
+        <div class="shadow-2xl px-8 py-4 border-2 items">
+            <h1 class="text-xl font-medium pb-2">Ques 3: What is event delegation in the context of the DOM, and why is it useful?</h1>
+            <p class="font-normal text-sm">Ans. Event delegation takes advantage of this bubbling behavior. Bubbling goes
+                 child to the root but delegation do opposite it start from the root and goes to target child. You can 
+                 determine which child element triggered the event by using the event.target property.</p>
+        </div>
+
+        <div class="shadow-2xl px-8 py-4 border-2 items">
+            <h1 class="text-xl font-medium pb-2">Ques 4: How do you manipulate an element's attributes and styles using the DOM?</h1>
+            <p class="font-normal text-sm">Ans. 
+                const something = document.getElementById('id');<br>
+                Attribute manupulation:<br>
+                something.getAttribute('src');,
+                something.setAttribute('src', 'my.jpg');,
+                something.removeAttribute('src');,<br>
+                style manupulation:<br>
+                somehing.style.backgroundColor="red";,
+                somehing.style.position="static";,
+                somehing.style.borderRadious="2px solid black";<br>
+                etc.
+
+
+
+            </p>
+        </div>
+
+    </main>
+
+
+   
+    </body>
+
+    <script src="blog.js"></script>
+    </html>

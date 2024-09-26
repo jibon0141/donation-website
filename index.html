@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisyUI , tailwind and font awsome cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <style>
+  
+ 
+    
+      </style>
+
+    
+</head>
+<body>
+
+
+     <header id="header">
+           <!-- navbar section start -->
+           <div class="flex flex-col gap-y-4 md:flex-row items-center justify-around p-4">
+            <div class="">
+              <a class="px-6 py-1.5 bg-lime-300 rounded-md"><button><span id="blog" class="text-sm font-bold">Blog</span></button></a>
+            </div>
+            <div class="flex flex-col items-center gap-y-4 md:flex-row text-center md:text-left">
+                <div class="h-8 w-8 mr-4">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <h1 class="font-bold">Donate Bangladesh</h1>               
+            </div>
+            <div class="flex flex-col gap-y-4 md:flex-row items-center">
+                <div class="mr-3">
+                    <img src="assets/coin.png" alt="">
+                </div>
+                <p class="text-md font-bold"><span id="total-amount">5500</span><san> BDT</san></p>
+             
+            </div>
+          </div>
+
+        <!-- button section start -->
+        <div class="flex-col text-center md:flex md:flex-row md:justify-center mt-20 pb-6">
+            <button id="donation-btn" class="px-6 py-1.5  rounded-md mr-2"><span class="mb-4">Donation</span></button>
+            <button id="history-btn" class="px-6 py-1.5 border border-blue-200  rounded-md"><span class="">History</span></button>
+        </div>
+        <!-- button section start -->
+          <!-- navbar section end -->
+    </header>
+     
+
+
+
+      <!-- Main Section Start -->
+      <main class="">
+     
+        <!-- card secttion start -->
+         <div class="mt-16 mx-20">
+        <!-- first card start -->
+         <div class=" mb-16 md:flex md:mb-12">
+            <!-- first part start -->
+         <div class=" md:mr-8 md:h-80 md:w-1/2 items">
+            <img class="" src="assets/noakhali.png" alt="">
+         </div>
+        <!-- first part end -->
+
+        <!-- second part start -->
+         <div class="w-full md:h-80 md:w-1/2">
+            <div class="flex  mb-4">
+              <div class="mr-3 ">
+                <img src="assets/coin.png" alt="">
+            </div>
+            <p class="text-md font-bold"><span id="noakhali-total-amount">550</span><san> BDT</san></p>
+            </div>
+
+            <div class="w-full">
+                <h1 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="mt-4 text-sm">The recent floods in Noakhali have caused significant damage to homes 
+                    infrastructure. Your donation will help provide essential supplies and to those affected by this
+                     disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                      relief efforts and making a positive impact on the lives of those in need.</p>
+                     <input id="noakhali-donation-amount" type="text" class="w-full mt-4 h-8 border-2 " placeholder="Enter Donate Amount">
+
+                     <button id="noakhali-donation-btn" class="px-6 py-1.5 bg-lime-300 rounded-md w-full mt-4 font-bold items">
+                        <span class="">Donation Now</span>
+                    </button>
+            </div>
+
+         </div>
+      
+        </div>
+         <!-- first card end -->
+
+      
+
+
+
+
+         
+            <!-- second card start -->
+             <div class=" md:flex">
+                <!-- first part start -->
+             <div class="md:mr-8 md:h-80 md:w-1/2 items">
+                <img class=""src="assets/feni.png" alt="">
+             </div>
+            <!-- first part end -->
+    
+            <!-- second part start -->
+             <div class="w-full md:h-80 md:w-1/2 ">
+                <div class="flex  mb-4">
+                    <div class="mr-3">
+                    <img src="assets/coin.png" alt="">
+                </div>
+                <p class="text-md font-bold"><span id="feni-total-amount">900</span><san> BDT</san></p>
+                </div>
+    
+                <div>
+                    <h1 class="font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="mt-4 text-sm">The recent floods in Feni have devastated local communities, leading to severe 
+                        disruption and loss. Your generous donation will help provide immediate aid, including food,
+                         clean water, and medical supplies, to those affected by this calamity. Together, we can offer
+                          crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                           counts towards making a real difference. Please consider donating today to assist those in
+                            urgent need.</p>
+                         <input type="text" id="feni-donation-amount" class="w-full mt-4 h-8 border-2" placeholder="Enter Donate Amount">
+    
+                         <button id="feni-donation-btn" class="px-6 py-1.5 bg-lime-300 rounded-md w-full mt-4 font-bold items">
+                            <span class="">Donation Now</span>
+                        </button>
+                </div>
+    
+             </div>
+              <!-- second part end -->
+            </div>
+             <!-- second card end -->
+
+
+
+               <!-- third card start -->
+            <div class="md:flex mt-24 mb-28">
+                <!-- first part start -->
+             <div class="w-full md:mr-8 md:h-80 md:w-1/2 items">
+                <img class="w-full"src="assets/quota-protest.png" alt="">
+             </div>
+            <!-- first part end -->
+    
+            <!-- second part start -->
+             <div class="w-full md:h-80 md:w-1/2">
+                <div class="flex  mb-4">
+                    <div class=" md:mr-3">
+                    <img  src="assets/coin.png" alt="">
+                </div>
+                <p class="text-md font-bold"><span id="qta-total-amount">900</span><san> BDT</san></p>
+                </div>
+    
+                <div>
+                    <h1 class="font-bold">Aid for Injured in the Quota Movement</h1>
+                    <p class="mt-4 text-sm">The recent Quota movement has resulted in numerous injuries and significant
+                         hardship for many individuals. Your support is crucial in providing medical assistance,
+                         rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that
+                          injured individuals receive the care and support they need during this challenging time. Every 
+                          donation plays a vital role in alleviating their suffering and aiding in their recovery. Please 
+                          consider making a donation to support these brave individuals in their time of need.</p>
+                         <input type="text" id="qta-donation-amount" class="w-full mt-4 h-8 border-2 " placeholder="Enter Donate Amount">
+    
+                         <button id="qta-donation-btn" class="px-6 py-1.5 bg-lime-300 rounded-md w-full mt-4 font-bold items ">
+                            <span class="">Donation Now</span>
+                        </button>
+                         <!-- Modal Structure -->
+     
+  
+     
+                </div>
+    
+             </div>
+              <!-- second part end -->
+            </div>
+             <!-- third card end -->
+       
+
+
+
+         </div>
+        <!-- card secttion end -->
+
+
+
+      </main>
+       <!-- Main Section end -->
+    
+
+       <script src="donation.js"></script>
+       <script src="manage_history.js"></script>
+      
+    
+</body>
+</html>
